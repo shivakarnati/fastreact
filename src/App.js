@@ -4,8 +4,12 @@ import React from 'react';
 import img1 from "./assets/plot.png";
 import img2 from "./assets/plot_Extended.png";
 import img3 from "./assets/plot_modelVariation1.png";
-import photo from "./assets/Photo-1.jpeg"
+import photo from "./assets/profile_photo.jpg"
 
+
+// Constants
+const skills = ['Digital Skills', 'Skills']
+const interest = ['Hobbies', 'Interests']
 
 const content=[
   [
@@ -27,11 +31,12 @@ const content=[
   ]
 ];
 
+
 const SimulationResults = () => {
   const [imageClicked, setImageClicked] = useState({
     first: false,
     second: false,
-    ground: false
+    ground: false 
   });
   const onClickHandler = (order) => {
     setImageClicked((prevState) => ({
@@ -62,21 +67,48 @@ const SimulationResults = () => {
 };
 
 
+// functions
+
+function genRandomInt(max){
+  return Math.floor(Math.random() * (max + 1));
+}
+
+
+function CoreConcepts(props){
+  return <li>
+    <img src={props.image} alt={props.title} width={100} height={100}></img>
+    <h3>{props.title}</h3>
+    <p>{props.description}</p>
+    </li>
+}
+
+function Header(){
+  return (
+  <div>
+      <img src={photo} alt="" width={250} height={333}/>
+      <li>
+        <a href="https://www.linkedin.com/in/shivakrishna
+-karnati-2b429827b">Contact Me</a>
+    </li>
+    <li>
+        <a href="https://github.com/shivakarnati">GitHub</a>
+    </li>
+        <div>
+          <h1>Shivakrishna Karnati</h1>
+          <p>Machine Learning, Computer Vision, and Natural Language Processing  Enthusiast.</p>
+        </div>
+  </div>
+  );
+}
+
+// default function
 export default function App(){
   const [activeContentIndex, setActiveContentIndex] = useState(0);
 
   return(
     <div>
-      <header>
-        <img src={photo} alt=""/>
-        <a href="https://www.linkedin.com/in/shivakrishna
--karnati-2b429827b">Contact Me</a>
-        <a href="https://github.com/shivakarnati">GitHub</a>
-        <div>
-          <h1>Shivakrishna Karnati</h1>
-          <p>Machine Learning, Computer Vision, and Natural Language Processing  Enthusiast.</p>
-        </div>
-      </header>
+      <Header />
+      <div>
       <div id="tabs">
         <menu>
           <button className= {activeContentIndex === 0 ? "active" : ""}
@@ -100,6 +132,20 @@ export default function App(){
           </ul>
         </div>
       </div>
+      </div>
+      <main>
+        <section id="core-concepts">
+          <h2>Core Concepts</h2>
+          <ul>
+            <CoreConcepts 
+            title = "Components"
+            description = "This is a test of props"
+            image = {img1}
+            />
+          </ul>
+        </section>
+        </main>
+      <div>
       <div id="projects">
       <div>
         <h3>ACADEMIC PROJECTS</h3>
@@ -123,6 +169,30 @@ export default function App(){
             <li>Jet Racer Obstacle Avoidance</li>
           </ul>
       </div>
+    </div>
+    </div>
+    <div id="education">
+      <div>
+        <h3>Educational Background</h3>
+        <ul>
+          <li>Applied Mathematics for Networks and Data Sciences (M.Sc) - Hochschule Mittweida, Mittweida, Germany</li>
+          <li>Masters of Computer Application (M.C.A) - Osmania University, Hyderabad, India</li>
+          <li>Bachelor in Computer Science (B.Sc) -  Osmania University, Hyderabad, India</li>
+        </ul>
+      </div>
+    </div>
+    <div id="skills">
+      <h3>{skills[genRandomInt(1)]}</h3>
+        <p>Java, Python, React, Sql, R, Tensorflow, PyTorch, Spring Boot, R, FastAPI, Git, AWS, Azure AI, Docker, OpenCV, Pandas, Numpy</p>
+    </div>
+    <div id="hobbies">
+      <h3>{interest[genRandomInt(1)]}</h3>
+        <ul>
+          <li>Playing Basketball</li>
+          <li>Listening to Music</li>
+          <li>Watching Movies</li>
+          <li>Writing Stories</li>
+        </ul>
     </div>
     </div>
   )
