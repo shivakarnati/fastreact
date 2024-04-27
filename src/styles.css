@@ -28,6 +28,10 @@
   
   header p {
     margin: 0;
+    color: #838a8c;
+  }
+
+  .list {
     color: #82c2ce;
   }
   

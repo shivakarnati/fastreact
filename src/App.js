@@ -68,11 +68,9 @@ const SimulationResults = () => {
 
 
 // functions
-
 function genRandomInt(max){
   return Math.floor(Math.random() * (max + 1));
 }
-
 
 function CoreConcepts(props){
   return <li>
@@ -82,29 +80,25 @@ function CoreConcepts(props){
     </li>
 }
 
+
+// Header Component
 function Header(){
-  return (
-  <div>
-      <img src={photo} alt="" width={250} height={333}/>
-      <li>
-        <a href="https://www.linkedin.com/in/shivakrishna
--karnati-2b429827b">Contact Me</a>
-    </li>
-    <li>
-        <a href="https://github.com/shivakarnati">GitHub</a>
-    </li>
+  return ( 
+    <header>
+        <img src={photo} alt=""/>
+        <a href="https://www.linkedin.com/in/shivakrishna-karnati-2b429827b" className="list">Contact</a>
+        <a href="https://github.com/shivakarnati" className="list">GitHub</a>
         <div>
           <h1>Shivakrishna Karnati</h1>
           <p>Machine Learning, Computer Vision, and Natural Language Processing  Enthusiast.</p>
         </div>
-  </div>
+    </header>
   );
 }
 
-// default function
+// Default function
 export default function App(){
   const [activeContentIndex, setActiveContentIndex] = useState(0);
-
   return(
     <div>
       <Header />
@@ -133,18 +127,6 @@ export default function App(){
         </div>
       </div>
       </div>
-      <main>
-        <section id="core-concepts">
-          <h2>Core Concepts</h2>
-          <ul>
-            <CoreConcepts 
-            title = "Components"
-            description = "This is a test of props"
-            image = {img1}
-            />
-          </ul>
-        </section>
-        </main>
       <div>
       <div id="projects">
       <div>
@@ -194,6 +176,7 @@ export default function App(){
           <li>Writing Stories</li>
         </ul>
     </div>
+
     </div>
   )
 }
