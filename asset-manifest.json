@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/fastreact/static/css/main.7c5c7dde.css",
-    "main.js": "/fastreact/static/js/main.a69e446e.js",
+    "main.css": "/fastreact/static/css/main.e1d86275.css",
+    "main.js": "/fastreact/static/js/main.d529ccbe.js",
     "static/media/profile_photo.jpg": "/fastreact/static/media/profile_photo.d46ae46abf49eedc481b.jpg",
     "static/media/plot.png": "/fastreact/static/media/plot.321d2fbdfe1b22d6630d.png",
     "static/media/plot_Extended.png": "/fastreact/static/media/plot_Extended.a009df2e3c57a0736d2f.png",
     "static/media/plot_modelVariation1.png": "/fastreact/static/media/plot_modelVariation1.3337b6d4aa24436c7181.png",
     "index.html": "/fastreact/index.html",
-    "main.7c5c7dde.css.map": "/fastreact/static/css/main.7c5c7dde.css.map",
-    "main.a69e446e.js.map": "/fastreact/static/js/main.a69e446e.js.map"
+    "main.e1d86275.css.map": "/fastreact/static/css/main.e1d86275.css.map",
+    "main.d529ccbe.js.map": "/fastreact/static/js/main.d529ccbe.js.map"
   },
   "entrypoints": [
-    "static/css/main.7c5c7dde.css",
-    "static/js/main.a69e446e.js"
+    "static/css/main.e1d86275.css",
+    "static/js/main.d529ccbe.js"
   ]
 }
