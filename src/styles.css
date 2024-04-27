@@ -35,6 +35,10 @@
     color: #82c2ce;
   }
   
+  .warning {
+    color: #f1ac6f;
+  }
+
   #tabs {
     max-width: 32rem;
     overflow: hidden;   
