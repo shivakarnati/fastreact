@@ -1,0 +1,22 @@
+
+header {
+    margin: 2rem 0;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+header img {
+width: 4rem;
+object-fit: contain;
+}
+
+header h1 {
+margin: 0;
+color: #48d9f3;
+}
+
+header p {
+margin: 0;
+color: #838a8c;
+}

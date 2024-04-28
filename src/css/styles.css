@@ -9,28 +9,6 @@
     margin: 2rem;
   }
   
-  header {
-    margin: 2rem 0;
-    display: flex;
-    gap: 1.5rem;
-    align-items: center;
-  }
-  
-  header img {
-    width: 4rem;
-    object-fit: contain;
-  }
-  
-  header h1 {
-    margin: 0;
-    color: #48d9f3;
-  }
-  
-  header p {
-    margin: 0;
-    color: #838a8c;
-  }
-
   .list {
     color: #82c2ce;
   }
@@ -99,4 +77,11 @@
     display:grid;
     justify-content: space-between;
 
+  }
+
+  #core-concepts {
+    padding: 2rem;
+    border-radius: 6px;
+    background-color: #140524;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   }
